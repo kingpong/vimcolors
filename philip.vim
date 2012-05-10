@@ -2,7 +2,7 @@
 "
 " Name:         philip.vim
 " Maintainer:   Philip Garrett <philgarr@gmail.com>
-" Last Change:  14 Dec 2010
+" Last Change:  13 Sep 2011
 " License:      Freeware, no claim of ownership
 " Version:      1.0
 "
@@ -51,8 +51,8 @@ highlight Title                     guifg=#FFFFFF ctermfg=15
 highlight Type                      guifg=#DA4939 ctermfg=167 gui=NONE cterm=NONE
 highlight Visual                    guibg=#791115 ctermbg=52
 
-highlight NonText                   guifg=#999999 ctermfg=238 ctermbg=232 guibg=#000000
-highlight SpecialKey                guifg=#999999 ctermfg=196 ctermbg=232 guibg=#000000
+highlight NonText                   guifg=#999999 ctermfg=238 ctermbg=NONE guibg=NONE
+highlight SpecialKey                guifg=#999999 ctermfg=196 ctermbg=NONE guibg=NONE
 
 highlight DiffAdd                   guifg=#FFFFFF ctermfg=7 guibg=#3B6C0C ctermbg=22
 highlight DiffDelete                guifg=#631A04 ctermfg=52 guibg=#631A04 ctermbg=52
@@ -62,11 +62,11 @@ highlight DiffText                  ctermbg=15 ctermfg=60 guibg=#FFFFFF guifg=#3
 hi Folded       guibg=gray30 guifg=#a3f9fe ctermbg=239 ctermfg=159
 hi FoldColumn   guibg=gray30 guifg=white ctermbg=239 ctermfg=15
 
-highlight Special                   guifg=#DA4939 ctermfg=167 
+highlight Special                   guifg=#DA4939 ctermfg=167
 
 highlight pythonBuiltin             guifg=#6D9CBE ctermfg=73 gui=NONE cterm=NONE
 highlight rubyBlockParameter        guifg=#FFFFFF ctermfg=15
-highlight rubyClass                 guifg=#CC7833 ctermfg=209
+highlight rubyClass                 guifg=#FFFFFF ctermfg=15
 highlight rubyConstant              guifg=#DA4939 ctermfg=167
 highlight rubyInstanceVariable      guifg=#D0D0FF ctermfg=189
 highlight rubyInterpolation         guifg=#519F50 ctermfg=107
