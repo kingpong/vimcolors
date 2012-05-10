@@ -2,7 +2,7 @@
 "
 " Name:         philip.vim
 " Maintainer:   Philip Garrett <philgarr@gmail.com>
-" Last Change:  13 Sep 2011
+" Last Change:  10 May 2012
 " License:      Freeware, no claim of ownership
 " Version:      1.0
 "
