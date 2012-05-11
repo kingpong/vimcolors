@@ -15,75 +15,75 @@
 "     term screen-256color-bce
 
 set background=dark
-hi clear
+highlight clear
 if exists("syntax_on")
   syntax reset
 endif
 
 let g:colors_name = "philip"
 
-hi link htmlTag                     xmlTag
-hi link htmlTagName                 xmlTagName
-hi link htmlEndTag                  xmlEndTag
+highlight Normal                    gui=NONE      guifg=#E6E1DC guibg=#111111 ctermfg=NONE ctermbg=NONE cterm=NONE
+highlight Cursor                    gui=NONE      guifg=#000000 guibg=#FFFFFF ctermfg=0    ctermbg=15   cterm=NONE
+highlight CursorLine                gui=NONE      guifg=NONE    guibg=#121212 ctermfg=NONE ctermbg=234  cterm=NONE
+highlight CursorColumn              gui=NONE      guifg=NONE    guibg=#121212 ctermfg=NONE ctermbg=234  cterm=NONE
 
-highlight Normal                    guifg=#E6E1DC guibg=#111111 
-highlight Cursor                    guifg=#000000 ctermfg=0 guibg=#FFFFFF ctermbg=15	
-highlight CursorLine                guifg=NONE guibg=#121212 ctermbg=234 cterm=NONE
-highlight CursorColumn              guifg=NONE guibg=#121212 ctermbg=234 cterm=NONE
+highlight Comment                   gui=italic    guifg=#BC9458 guibg=NONE    ctermfg=180  ctermbg=NONE cterm=NONE
+highlight Constant                  gui=NONE      guifg=#6D9CBE guibg=NONE    ctermfg=73   ctermbg=NONE cterm=NONE
+highlight Define                    gui=NONE      guifg=#CC7833 guibg=NONE    ctermfg=209  ctermbg=NONE cterm=NONE
+highlight Error                     gui=NONE      guifg=#FFC66D guibg=#990000 ctermfg=221  ctermbg=88   cterm=NONE
+highlight Function                  gui=NONE      guifg=#FFC66D guibg=NONE    ctermfg=221  ctermbg=NONE cterm=NONE
+highlight Identifier                gui=NONE      guifg=#6D9CBE guibg=NONE    ctermfg=73   ctermbg=NONE cterm=NONE
+highlight Include                   gui=NONE      guifg=#CC7833 guibg=NONE    ctermfg=209  ctermbg=NONE cterm=NONE
+highlight PreCondit                 gui=NONE      guifg=#CC7833 guibg=NONE    ctermfg=209  ctermbg=NONE cterm=NONE
+highlight Keyword                   gui=NONE      guifg=#CC7833 guibg=NONE    ctermfg=209  ctermbg=NONE cterm=NONE
+highlight LineNr                    gui=NONE      guifg=#999999 guibg=#000000 ctermfg=246  ctermbg=232  cterm=NONE
+highlight Number                    gui=NONE      guifg=#A5C261 guibg=NONE    ctermfg=107  ctermbg=NONE cterm=NONE
+highlight PreProc                   gui=NONE      guifg=#E6E1DC guibg=NONE    ctermfg=103  ctermbg=NONE cterm=NONE
+highlight Search                    gui=italic    guifg=NONE    guibg=#2b2b2b ctermfg=NONE ctermbg=235  cterm=underline
+highlight Statement                 gui=NONE      guifg=#CC7833 guibg=NONE    ctermfg=209  ctermbg=NONE cterm=NONE
+highlight String                    gui=NONE      guifg=#A5C261 guibg=NONE    ctermfg=107  ctermbg=NONE cterm=NONE
+highlight Title                     gui=NONE      guifg=#FFFFFF guibg=NONE    ctermfg=15   ctermbg=NONE cterm=NONE
+highlight Type                      gui=NONE      guifg=#DA4939 guibg=NONE    ctermfg=167  ctermbg=NONE cterm=NONE
+highlight Visual                    gui=NONE      guifg=NONE    guibg=#791115 ctermfg=NONE ctermbg=52   cterm=NONE
 
-highlight Comment                   guifg=#BC9458 ctermfg=180 gui=italic
-highlight Constant                  guifg=#6D9CBE ctermfg=73
-highlight Define                    guifg=#CC7833 ctermfg=209
-highlight Error                     guifg=#FFC66D ctermfg=221 guibg=#990000 ctermbg=88
-highlight Function                  guifg=#FFC66D ctermfg=221 gui=NONE cterm=NONE
-highlight Identifier                guifg=#6D9CBE ctermfg=73 gui=NONE cterm=NONE
-highlight Include                   guifg=#CC7833 ctermfg=209 gui=NONE cterm=NONE
-highlight PreCondit                 guifg=#CC7833 ctermfg=209 gui=NONE cterm=NONE
-highlight Keyword                   guifg=#CC7833 ctermfg=209 cterm=NONE
-highlight LineNr                    guifg=#999999 ctermfg=246 ctermbg=232 guibg=#000000
-highlight Number                    guifg=#A5C261 ctermfg=107
-highlight PreProc                   guifg=#E6E1DC ctermfg=103
-highlight Search                    guifg=NONE ctermfg=NONE guibg=#2b2b2b ctermbg=235 gui=italic cterm=underline
-highlight Statement                 guifg=#CC7833 ctermfg=209 gui=NONE cterm=NONE
-highlight String                    guifg=#A5C261 ctermfg=107
-highlight Title                     guifg=#FFFFFF ctermfg=15
-highlight Type                      guifg=#DA4939 ctermfg=167 gui=NONE cterm=NONE
-highlight Visual                    guibg=#791115 ctermbg=52
+highlight NonText                   gui=NONE      guifg=#999999 guibg=NONE    ctermfg=238  ctermbg=NONE cterm=NONE
+highlight SpecialKey                gui=NONE      guifg=#999999 guibg=NONE    ctermfg=196  ctermbg=NONE cterm=NONE
 
-highlight NonText                   guifg=#999999 ctermfg=238 ctermbg=NONE guibg=NONE
-highlight SpecialKey                guifg=#999999 ctermfg=196 ctermbg=NONE guibg=NONE
+highlight DiffAdd                   gui=NONE      guifg=#FFFFFF guibg=#3B6C0C ctermfg=7    ctermbg=22   cterm=NONE
+highlight DiffDelete                gui=NONE      guifg=#631A04 guibg=#631A04 ctermfg=52   ctermbg=52   cterm=NONE
+highlight DiffChange                gui=NONE      guifg=#FFFFFF guibg=#727498 ctermfg=15   ctermbg=60   cterm=NONE
+highlight DiffText                  gui=NONE      guifg=#3D3E53 guibg=#FFFFFF ctermfg=60   ctermbg=15   cterm=NONE
 
-highlight DiffAdd                   guifg=#FFFFFF ctermfg=7 guibg=#3B6C0C ctermbg=22
-highlight DiffDelete                guifg=#631A04 ctermfg=52 guibg=#631A04 ctermbg=52
-highlight DiffChange                ctermbg=60 ctermfg=15 guifg=#FFFFFF guibg=#727498
-highlight DiffText                  ctermbg=15 ctermfg=60 guibg=#FFFFFF guifg=#3D3E53
+highlight Folded                    gui=NONE      guifg=#a3f9fe guibg=gray30  ctermfg=159  ctermbg=239  cterm=NONE
+highlight FoldColumn                gui=NONE      guifg=white   guibg=gray30  ctermfg=15   ctermbg=239  cterm=NONE
 
-hi Folded       guibg=gray30 guifg=#a3f9fe ctermbg=239 ctermfg=159
-hi FoldColumn   guibg=gray30 guifg=white ctermbg=239 ctermfg=15
+highlight Special                   gui=NONE      guifg=#DA4939 guibg=NONE    ctermfg=167  ctermbg=NONE cterm=NONE
 
-highlight Special                   guifg=#DA4939 ctermfg=167
+highlight pythonBuiltin             gui=NONE      guifg=#6D9CBE guibg=NONE    ctermfg=73   ctermbg=NONE cterm=NONE
+highlight rubyBlockParameter        gui=NONE      guifg=#FFFFFF guibg=NONE    ctermfg=15   ctermbg=NONE cterm=NONE
+highlight rubyClass                 gui=NONE      guifg=#FFFFFF guibg=NONE    ctermfg=15   ctermbg=NONE cterm=NONE
+highlight rubyConstant              gui=NONE      guifg=#DA4939 guibg=NONE    ctermfg=167  ctermbg=NONE cterm=NONE
+highlight rubyInstanceVariable      gui=NONE      guifg=#D0D0FF guibg=NONE    ctermfg=189  ctermbg=NONE cterm=NONE
+highlight rubyInterpolation         gui=NONE      guifg=#519F50 guibg=NONE    ctermfg=107  ctermbg=NONE cterm=NONE
+highlight rubyLocalVariableOrMethod gui=NONE      guifg=#D0D0FF guibg=NONE    ctermfg=189  ctermbg=NONE cterm=NONE
+highlight rubyPredefinedConstant    gui=NONE      guifg=#DA4939 guibg=NONE    ctermfg=167  ctermbg=NONE cterm=NONE
+highlight rubyPseudoVariable        gui=NONE      guifg=#FFC66D guibg=NONE    ctermfg=221  ctermbg=NONE cterm=NONE
+highlight rubyStringDelimiter       gui=NONE      guifg=#A5C261 guibg=NONE    ctermfg=143  ctermbg=NONE cterm=NONE
 
-highlight pythonBuiltin             guifg=#6D9CBE ctermfg=73 gui=NONE cterm=NONE
-highlight rubyBlockParameter        guifg=#FFFFFF ctermfg=15
-highlight rubyClass                 guifg=#FFFFFF ctermfg=15
-highlight rubyConstant              guifg=#DA4939 ctermfg=167
-highlight rubyInstanceVariable      guifg=#D0D0FF ctermfg=189
-highlight rubyInterpolation         guifg=#519F50 ctermfg=107
-highlight rubyLocalVariableOrMethod guifg=#D0D0FF ctermfg=189
-highlight rubyPredefinedConstant    guifg=#DA4939 ctermfg=167
-highlight rubyPseudoVariable        guifg=#FFC66D ctermfg=221
-highlight rubyStringDelimiter       guifg=#A5C261 ctermfg=143
+highlight xmlTag                    gui=NONE      guifg=#E8BF6A guibg=NONE    ctermfg=179  ctermbg=NONE cterm=NONE
+highlight xmlTagName                gui=NONE      guifg=#E8BF6A guibg=NONE    ctermfg=179  ctermbg=NONE cterm=NONE
+highlight xmlEndTag                 gui=NONE      guifg=#E8BF6A guibg=NONE    ctermfg=179  ctermbg=NONE cterm=NONE
 
-highlight xmlTag                    guifg=#E8BF6A ctermfg=179
-highlight xmlTagName                guifg=#E8BF6A ctermfg=179
-highlight xmlEndTag                 guifg=#E8BF6A ctermfg=179
+highlight mailSubject               gui=NONE      guifg=#A5C261 guibg=NONE    ctermfg=107  ctermbg=NONE cterm=NONE
+highlight mailHeaderKey             gui=NONE      guifg=#FFC66D guibg=NONE    ctermfg=221  ctermbg=NONE cterm=NONE
+highlight mailEmail                 gui=italic    guifg=#A5C261 guibg=NONE    ctermfg=107  ctermbg=NONE cterm=underline
 
-highlight mailSubject               guifg=#A5C261 ctermfg=107
-highlight mailHeaderKey             guifg=#FFC66D ctermfg=221
-highlight mailEmail                 guifg=#A5C261 ctermfg=107 gui=italic cterm=underline
+highlight SpellBad                  gui=NONE      guifg=#D70000 guibg=NONE    ctermfg=160  ctermbg=NONE cterm=underline
+highlight SpellRare                 gui=underline guifg=#D75F87 guibg=NONE    ctermfg=168  ctermbg=NONE cterm=underline
+highlight SpellCap                  gui=underline guifg=#D0D0FF guibg=NONE    ctermfg=189  ctermbg=NONE cterm=underline
+highlight MatchParen                gui=NONE      guifg=#FFFFFF guibg=#005f5f ctermfg=15   ctermbg=23   cterm=NONE
 
-highlight SpellBad                  guifg=#D70000 ctermfg=160 ctermbg=NONE cterm=underline
-highlight SpellRare                 guifg=#D75F87 ctermfg=168 guibg=NONE ctermbg=NONE gui=underline cterm=underline
-highlight SpellCap                  guifg=#D0D0FF ctermfg=189 guibg=NONE ctermbg=NONE gui=underline cterm=underline
-highlight MatchParen                guifg=#FFFFFF ctermfg=15 guibg=#005f5f ctermbg=23
+highlight link htmlTag     xmlTag
+highlight link htmlTagName xmlTagName
+highlight link htmlEndTag  xmlEndTag
 
