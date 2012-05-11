@@ -2,9 +2,7 @@
 "
 " Name:         philip.vim
 " Maintainer:   Philip Garrett <philgarr@gmail.com>
-" Last Change:  10 May 2012
 " License:      Freeware, no claim of ownership
-" Version:      1.0
 "
 " This 256-color theme is based on Nick Moffit's railscasts.vim. It looks good
 " in both my Mac's iTerm2 and MacVim. It also handles VimDiff in a
