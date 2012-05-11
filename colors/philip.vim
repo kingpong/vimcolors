@@ -22,10 +22,10 @@ endif
 
 let g:colors_name = "philip"
 
-highlight Normal                    gui=NONE      guifg=#E6E1DC guibg=#111111 ctermfg=NONE ctermbg=NONE cterm=NONE
+highlight Normal                    gui=NONE      guifg=#E6E1DC guibg=#101010 ctermfg=NONE ctermbg=NONE cterm=NONE
 highlight Cursor                    gui=NONE      guifg=#000000 guibg=#FFFFFF ctermfg=0    ctermbg=15   cterm=NONE
-highlight CursorLine                gui=NONE      guifg=NONE    guibg=#121212 ctermfg=NONE ctermbg=234  cterm=NONE
-highlight CursorColumn              gui=NONE      guifg=NONE    guibg=#121212 ctermfg=NONE ctermbg=234  cterm=NONE
+highlight CursorLine                gui=NONE      guifg=NONE    guibg=#191919 ctermfg=NONE ctermbg=234  cterm=NONE
+highlight CursorColumn              gui=NONE      guifg=NONE    guibg=#191919 ctermfg=NONE ctermbg=234  cterm=NONE
 
 highlight Comment                   gui=italic    guifg=#BC9458 guibg=NONE    ctermfg=180  ctermbg=NONE cterm=NONE
 highlight Constant                  gui=NONE      guifg=#6D9CBE guibg=NONE    ctermfg=73   ctermbg=NONE cterm=NONE
